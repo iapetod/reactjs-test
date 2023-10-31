@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+
+.todo-list{
+  list-style-type: none;
+  padding:0px;
+  margin:5px;
+  border-radius: 10px;
+  border:1px solid silver;
+  width: 500px;
+}
+.todo-item{
+  display: flex;
+  justify-content: space-between;
+  padding:10px;
+  border-bottom:1px solid silver;
+}
+.todo-item h1{
+  padding:0px;
+  margin:0px;
+  text-align: center;
+  width: 100%;
+}
+.item-checked{
+  text-decoration:line-through;
+}
+
+.text-warning{
+  font-size:10px;
+  color:red;
+  display:none;
+}
+.text-warning.active{
+  font-size:10px;
+  color:red;
+}
+.input-form{
+  box-sizing: border-box;
+  display:block;
+  padding-inline:0px;
+  border:0px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.container{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.edit-form{
+  display:flex;
+}
+.edit-form input{
+  flex:1;
+  border:1px solid silver;
+}
+.edit-form button{
+  border:1px solid silver;
+}
+
+.form-group{
+  position:relative;
+}
+.form-group button{
+  position:absolute;
+  top:0px;
+  right:0px;
+  border:0px solid silver;
+  border-left:1px solid silver;
+  padding:10px;
+  border-radius: 0px 0px 10px 0px;
+}
